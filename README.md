@@ -76,7 +76,7 @@ Push the .tar.gz file to S3 bucket
 
 
 ### Deploying endpoint from Local Machine
-Follow the following steps to create an endpoint
+Follow the below steps to create an endpoint
 ```
 from sagemaker.huggingface.model import HuggingFaceModel
 
@@ -103,9 +103,10 @@ predictor = huggingface_model.deploy(
 print(f'Model deployed at endpoint: {predictor.endpoint_name}')
 ```
 
-Once endpoint is successfully created you can test it out using the following code
+Once endpoint is successfully created you can test it using the following code
 ```
 import boto3
+import json
 
 endpoint_name = "fastapi-sentiment-classifier" 
 boto_session = boto3.Session(region_name='ap-south-1')
@@ -131,7 +132,7 @@ print("Prediction result:", result)
 
 ### Wrapping the endpoint with FastAPI
 
-First install the requirements 
+Install the requirements 
 - uvicorn
 - fastapi
 - pydantic
