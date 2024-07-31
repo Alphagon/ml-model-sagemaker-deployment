@@ -28,7 +28,7 @@ Next move on to your local machine and download the Amazon CLI
 1. Download the cli package from amazon `curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"`
 2. Extract the downloaded package `unzip -u awscliv2.zip`
 3. Go inside the extracted folder and install it sudo ./install
-4. Check the installation with the followingaws-cli/2.15.30 Python/3.11.6 Linux/5.10.205-195.807.amzn2.x86_64 botocore/2.4.5 command `aws --version`
+4. Check the installation with the following command `aws --version`
 You'll get an output something like `aws-cli/2.15.30 Python/3.11.6 Linux/5.10.205-195.807.amzn2.x86_64 botocore/2.4.5`
 
 Next you need to configure the AWS CLI with the KEY and SECRET you created.
